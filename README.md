@@ -1,4 +1,4 @@
-# kool-vue-boilerplate
+# Bodo - Landing page
 
 ## Project setup
 ```
