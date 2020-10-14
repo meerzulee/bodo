@@ -1,23 +1,54 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Project from '../views/ProjectPage.vue'
+import RemontKvartir from '../views/Pages/RemontKvartir.vue'
+import RemontDomov from '../views/Pages/RemontDomov.vue'
+import StandardRemont from '../views/Pages/Kvartir/Standard.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+function prefixRoutes(prefix, routes) {
+  return routes.map((route) => {
+    route.path = prefix + '' + route.path;
+    return route;
+  });
+}
+const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: '/remont-kvartir',
+    name: 'remont-kvartir',
+
+    component: RemontKvartir,
+
+  },
+
+
+  {
+    path: '/remont-domov',
+    name: 'remont-domov',
+
+    component: RemontDomov
+  },
+  {
+    path: '/project',
+    name: 'Project',
+    component: Project
+  },
+  ...prefixRoutes('/remont-kvartir',
+    [
+      {
+        path: '/standard',
+        name: 'remont-standard',
+        component: StandardRemont
+      },
+
+    ]),
 ]
 
 const router = new VueRouter({

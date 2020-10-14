@@ -1,9 +1,9 @@
 {
-  "name": "kool-vue-boilerplate",
+  "name": "RemontKvartir",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port 6060",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -11,7 +11,8 @@
     "core-js": "^3.6.5",
     "tailwindcss": "^1.8.3",
     "vue": "^2.6.12",
-    "vue-router": "^3.4.3"
+    "vue-router": "^3.4.3",
+    "vue-transition-expand": "^0.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.6",
