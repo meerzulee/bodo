@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- works -->
-    <h1 class="mt-8 mb-10 text-4xl font-bold">Наши работы</h1>
+    <h1 class="mt-8 mb-5 text-4xl font-bold">Наши работы</h1>
     <div class="grid w-full grid-cols-6 gap-8 mt-3">
       <div class="col-span-4 bg-royal_blue">
         <router-link to="/project" class="relative block cursor-pointer group">
@@ -77,7 +77,9 @@
       </div>
     </div>
     <div class="flex justify-center mx-auto mt-12">
-      <a href="#" class="px-6 py-4 pt-3 border border-black">Показать еще</a>
+      <a href="#" class="px-6 py-4 leading-tight border border-black"
+        >Показать еще</a
+      >
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="flex flex-col container mx-auto">
+    <div class="container flex flex-col mx-auto">
       <h1 class="mt-12 heading-1">Ремонт квартир без забот</h1>
       <h3 class="text-justify simple-text">
         Дизайн интерьера, ремонт квартиры, комплектация — <br />
@@ -13,7 +13,7 @@
     <!-- section -->
     <div class="mt-20">
       <div class="bg-gradient-to-t from-solitude">
-        <div class="relative container px-5 pb-40 mx-auto mt-20">
+        <div class="container relative px-5 pb-40 mx-auto mt-20">
           <p class="text-justify simple-text">
             Ищете компанию по ремонту квартир в Москве? Мы фанатично относимся к
             качеству и отвечаем за него. Берем на себя все заботы — от
@@ -184,7 +184,7 @@
 
     <!-- mosaic -->
     <div class="mt-8 mb-20 bg-white">
-      <div class="flex flex-col container mx-auto">
+      <div class="container flex flex-col mx-auto">
         <h1 class="mb-10 text-4xl font-bold">Как мы работаем:</h1>
         <!-- tabs -->
         <div class="flex flex-col">
@@ -298,6 +298,7 @@
 
 <script>
 // @ is an alias to /src
+
 import Carousel from '@/components/Carousel.vue'
 import PriceCard from '@/components/PriceCard'
 import WorkMosaic from '@/components/WorkMosaic'

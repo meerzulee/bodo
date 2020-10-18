@@ -10,7 +10,7 @@
         ></div>
       </div>
 
-      <div class="container pt-10 mx-auto text-white">
+      <div class="container pt-10 mx-auto text-white tab-land:px-8">
         <!-- content house -->
         <div v-if="house" class="flex flex-col">
           <h1 class="mt-20 heading-huge">{{ data.heading }}</h1>

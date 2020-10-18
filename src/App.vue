@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <div id="nav" class="relative flex flex-col">
+    <Sidebar class="fixed w-full sidebar-overlay tab-land-up:hidden" />
+    <div id="nav" class="relative flex flex-col tab-land-down:hidden">
       <div
         class="container items-center justify-between hidden w-full px-3 py-1 mx-auto bg-white tab-land:flex"
       >
@@ -96,6 +97,7 @@
         </div>
       </div>
     </div>
+
     <router-view />
     <!-- fff -->
     <div class="hidden py-10 text-white bg-dark tab-land-up:block">
@@ -168,6 +170,19 @@
     </div>
   </div>
 </template>
+<script>
+import Sidebar from '@/components/Sidebar.vue'
+export default {
+  components: {
+    Sidebar,
+  },
+  data() {
+    return {
+      // key: value,
+    }
+  },
+}
+</script>
 
 <style>
 </style>

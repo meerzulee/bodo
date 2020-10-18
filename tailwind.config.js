@@ -40,14 +40,21 @@ module.exports = {
         // <470px
         max: '29.375em'
       },
-      'tab-land-up': {
-        // >900
-        min: '62.1em',
+      'laptop-down': {
+        // <1200px
+        max: '75em',
       },
       'tab-land-down': {
         // <900
         max: '62.1em',
       },
+      'tab-land-up': {
+        // >900
+        min: '62.1em',
+      },
+
+
+
     },
     extend: {
       colors: {

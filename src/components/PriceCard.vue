@@ -2,13 +2,13 @@
   <!-- cards -->
   <div class="pb-32">
     <div class="py-12 bg-solitude">
-      <div class="relative container pb-24 mx-auto">
+      <div class="container relative pb-24 mx-auto">
         <h1 class="ml-4 text-4xl font-bold">
           Цены на ремонт квартир «под ключ»:
         </h1>
         <div class="flex mt-8 mb-4">
           <div
-            class="flex flex-col w-1/3 mx-4 cursor-pointer group"
+            class="flex flex-col w-1/3 mx-4 cursor-pointer tab-land-down:mx-2 group"
             v-for="(item, index) in cardArray"
             :key="index"
           >
@@ -33,12 +33,12 @@
                   <div
                     class="text-base font-bold text-black group-hover:text-white"
                   >
-                    от <span class="text-2xl">{{ item.price }}</span> сом/м<sup
-                      >2</sup
-                    >
+                    от
+                    <span class="text-2xl">{{ item.price }}</span>
+                    сом/м<sup>2</sup>
                   </div>
                 </div>
-                <p class="mx-4 mt-10 text-lg font-light leading-tight">
+                <p class="mx-4 mt-10 text-lg font-lightleading-tight">
                   {{ item.desc }}
                 </p>
               </div>
@@ -49,44 +49,18 @@
         </div>
 
         <!--  -->
-        <div class="absolute w-1/2 p-4 px-6 mt-12 text-white bg-royal_blue">
-          <h1 class="text-2xl font-bold">Нужна консультация специалиста?</h1>
-          <p class="mt-6 mb-8 font-light">
-            Получите бесплатную консультацию по вопросам
-          </p>
-          <div class="flex items-center justify-between mt-4">
-            <button class="px-5 py-4 font-semibold text-black bg-d_tangerine">
-              Получить консультацию
-            </button>
-            <div class="flex">
-              <a href="tel:+ 123 123 123" class="text-lg font-bold"
-                >+123 (123) 456 789</a
-              >
-
-              <a href="#" class="mx-3">
-                <img
-                  src="../assets/images/icons/telegram.png"
-                  class="w-full h-full"
-                  alt=""
-                />
-              </a>
-              <a href="#">
-                <img
-                  src="../assets/images/icons/whatsapp.png"
-                  class="w-full h-full"
-                  alt=""
-                />
-              </a>
-            </div>
-          </div>
-        </div>
+        <CardCTA />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import CardCTA from '@/components/CardCTA.vue'
 export default {
+  components: {
+    CardCTA,
+  },
   data() {
     return {
       cardArray: [
