@@ -4,7 +4,7 @@
     <h1 class="mt-8 mb-10 text-4xl font-bold">Наши работы</h1>
     <div class="grid w-full grid-cols-6 gap-8 mt-3">
       <div class="col-span-4 bg-royal_blue">
-        <a class="relative block cursor-pointer group">
+        <router-link to="/project" class="relative block cursor-pointer group">
           <img
             src="@/assets/images/h1.jpg"
             class="object-cover w-full group-hover:opacity-25 h-505"
@@ -19,7 +19,7 @@
               Ремонт двухкомнатной квартиры на ул. Рябиновая д.3
             </p>
           </div>
-        </a>
+        </router-link>
       </div>
       <div class="col-span-2 bg-royal_blue">
         <a class="relative block cursor-pointer group">

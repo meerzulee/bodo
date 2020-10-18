@@ -1,75 +1,7 @@
 <template>
-  <div class="standart">
-    <div class="relative pb-12">
-      <!-- bg -->
-      <div class="absolute inset-0 w-full h-full -z-10">
-        <img
-          src="@/assets/images/bg-standard.png"
-          class="z-0 object-cover w-full h-full"
-          alt=""
-        />
-        <div class="absolute inset-0 w-full h-full bg-smoke"></div>
-      </div>
-
-      <div class="max-w-6xl pt-10 mx-auto text-white">
-        <!-- #TODO: navigation-->
-        <div class="flex flex-col">
-          <h1 class="mt-20 heading-huge">
-            РЕМОНТ <br />
-            «СТАНДАРТ»
-          </h1>
-
-          <div class="flex flex-col justify-between w-2/3 mt-10">
-            <div class="flex items-center">
-              <p class="text-xl">
-                Ремонт квартиры по тарифу Стандарт является традиционным
-                капитальным ремонтом «под ключ», где преимущественно
-                используются недорогие материалы: обои, ламинат, натяжной
-                потолок
-              </p>
-            </div>
-          </div>
-          <!--  -->
-          <div class="flex flex-col items-start mt-10">
-            <div class="flex flex-col px-6 py-5 pr-32 bg-royal_blue">
-              <h3 class="text-xl font-bold leading-none">
-                от <span class="text-4xl">9000</span> сом/м<sup>2</sup>
-              </h3>
-              <button
-                class="px-5 py-4 mt-8 font-semibold text-black bg-d_tangerine"
-              >
-                Узнать точную стоимость
-              </button>
-              <div class="flex mt-8">
-                <a href="tel:+ 123 123 123" class="text-lg font-bold"
-                  >+123 (123) 456 789</a
-                >
-
-                <a href="#" class="mx-3">
-                  <img
-                    src="@/assets/images/icons/telegram.png"
-                    class="w-6 h-6"
-                    alt=""
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="@/assets/images/icons/whatsapp.png"
-                    class="w-6 h-6"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-    </div>
-    <!-- 
-      
-     -->
-    <div class="max-w-6xl py-24 mx-auto">
+  <div class="standard">
+    <Header :data="headerData" houseType />
+    <div class="container py-24 mx-auto">
       <h1 class="text-4xl font-bold leading-none">
         Что входит в стоимость ремонта:
       </h1>
@@ -108,7 +40,7 @@
           alt=""
         />
       </div>
-      <div class="flex flex-col max-w-6xl mx-auto">
+      <div class="flex flex-col container mx-auto">
         <div class="flex flex-col">
           <h1 class="mt-12 text-4xl font-bold leading-none">
             Что потребуется дополнительно?
@@ -188,10 +120,12 @@
 </template>
 
 <script>
+import Header from '@/components/Header'
 import WorkMosaic from '@/components/WorkMosaic'
 export default {
   components: {
     WorkMosaic,
+    Header,
   },
   data() {
     return {
@@ -244,6 +178,16 @@ export default {
           ],
         },
       ],
+      headerData: {
+        heading: ` РЕМОНТ <br />
+            «СТАНДАРТ»`,
+        description: `  Ремонт квартиры по тарифу Стандарт является традиционным
+                капитальным ремонтом «под ключ», где преимущественно
+                используются недорогие материалы: обои, ламинат, натяжной
+                потолок`,
+        price: '9000',
+        image: require('@/assets/images/bg-standard.png'),
+      },
     }
   },
 }

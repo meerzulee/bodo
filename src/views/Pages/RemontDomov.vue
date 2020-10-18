@@ -1,55 +1,10 @@
 <template>
   <div class="remont-kvartir">
-    <div class="relative pb-12">
-      <!-- bg -->
-      <div class="absolute inset-0 w-full h-full -z-10">
-        <img
-          src="@/assets/images/bg-dom.jpeg"
-          class="z-0 object-cover w-full h-full"
-          alt=""
-        />
-        <div class="absolute inset-0 w-full h-full bg-smoke"></div>
-      </div>
-
-      <div class="max-w-6xl pt-10 mx-auto text-white">
-        <!-- #TODO: navigation-->
-        <div class="flex flex-col">
-          <h1 class="mt-20 heading-huge">РЕМОНТ ДОМОВ «ПОД КЛЮЧ»</h1>
-
-          <div class="flex flex-col justify-between w-1/2 mt-10">
-            <div class="flex items-center">
-              <p class="text-xl font-bold">РЕМОНТ «ПОД КЛЮЧ» — ЭТО:</p>
-            </div>
-            <div class="flex flex-wrap mt-6">
-              <div
-                class="flex items-center w-1/2 mb-6"
-                v-for="(item, index) in [
-                  'Дизайн–проект',
-                  'Закупка материалов',
-                  'Ремонт',
-                  'Соблюдение сроков',
-                ]"
-                :key="index"
-              >
-                <img src="@/assets/images/check.png" class="w-6 h-6" alt="" />
-                <p class="ml-3 text-lg font-thin">{{ item }}</p>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="flex flex-col pl-4 mt-10 border-l-4 border-white">
-            <div>
-              <button class="px-5 py-4 font-semibold text-black bg-d_tangerine">
-                Получить консультацию
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Header :data="vdata" house />
+    <!-- text -->
     <div class="mt-24">
       <div class="bg-gradient-to-t from-solitude">
-        <div class="max-w-6xl mx-auto">
+        <div class="container mx-auto">
           <div class="px-4 pb-4">
             <h1 class="mb-4 text-4xl font-medium leading-none">
               Ремонт домов с компанией “Авальремонт”
@@ -94,13 +49,13 @@
     <!--  -->
     <PriceCardDom />
     <!--  -->
-    <div class="max-w-6xl mx-auto mt-8">
+    <div class="container mx-auto mt-8">
       <div class="flex flex-col">
         <WorkMosaic />
         <!-- почему мы -->
         <div class="mt-10">
           <div class="flex flex-col"></div>
-          <h1 class="mb-8 text-4xl font-bold leading-none">«Почему мы?»</h1>
+          <h1 class="mb-8 big-text">«Почему мы?»</h1>
           <p class="descr">
             За длительное время работы на рынке строительных услуг, мы проводили
             реконструкции “под ключ” любой сложности: от бюджетного ремонта до
@@ -126,9 +81,7 @@
             вовлечение заказчика в процесс реконструкции.
           </p>
 
-          <h1 class="mt-12 mb-8 text-4xl font-bold leading-none">
-            Сколько стоит ремонт домов?
-          </h1>
+          <h1 class="mt-12 mb-8 big-text">Сколько стоит ремонт домов?</h1>
           <p class="descr">
             Цена зависит от ряда факторов: метража помещения, качества выбранных
             материалов, технических нюансов ремонта в доме, а также особенностей
@@ -149,11 +102,12 @@
 
 <script>
 import PriceCardDom from '@/components/PriceCardDom'
+import Header from '@/components/Header'
 import WorkMosaic from '@/components/WorkMosaic'
 import FAQ from '@/components/FAQ'
 
 export default {
-  components: { PriceCardDom, WorkMosaic, FAQ },
+  components: { PriceCardDom, WorkMosaic, FAQ, Header },
   data() {
     return {
       textArr: [
@@ -162,6 +116,17 @@ export default {
         'Страховка от непредвиденных затрат в процессе ремонта;',
         'Исключение необдуманных решений при реставрации.',
       ],
+      vdata: {
+        heading: 'РЕМОНТ ДОМОВ «ПОД КЛЮЧ»',
+        subheading: 'РЕМОНТ «ПОД КЛЮЧ» — ЭТО:',
+        features: [
+          'Дизайн–проект',
+          'Закупка материалов',
+          'Ремонт',
+          'Соблюдение сроков',
+        ],
+        image: require('@/assets/images/bg-dom.jpeg'),
+      },
     }
   },
 }

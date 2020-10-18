@@ -2,34 +2,49 @@
   <div id="app">
     <div id="nav" class="relative flex flex-col">
       <div
+        class="container items-center justify-between hidden w-full px-3 py-1 mx-auto bg-white tab-land:flex"
+      >
+        <div class="flex">
+          <router-link to="/" class="nav-el">Bodo </router-link>
+        </div>
+
+        <div class="flex items-center">
+          <div class="mt-1 mr-6 text-2xl font-bold">+7 (777) 420-69-69</div>
+          <div class="flex items-center mr-4">
+            <a href="#" class="mr-3">
+              <img
+                src="./assets/images/icons/telegram.png"
+                class="w-full h-full"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/images/icons/whatsapp.png"
+                class="w-full h-full"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
         class="w-full py-2 text-white"
         :class="[
-          $route.path === '/project'
-            ? ['bg-transparent', '-mb-10']
-            : ' bg-royal_blue',
+          $route.path === '/project11' ? ['bg-gray-600'] : ' bg-royal_blue',
         ]"
       >
         <div
-          class="flex items-center justify-between w-full h-full max-w-6xl px-3 mx-auto"
+          class="container flex items-center justify-between w-full h-full px-3 mx-auto tab-land:py-3"
         >
           <div class="flex">
-            <router-link
-              to="remont-kvartir"
-              class="flex items-center mr-6 text-base leading-5"
-              >Ремонт квартир
-              <!-- <svg
-                class=""
-                style="width: 20px; height: 20px"
-                viewBox="0 0 22 22"
-              >
-                <path
-                  fill="currentColor"
-                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                /></svg> -->
+            <router-link to="/" class="nav-el tab-land:hidden"
+              >Bodo
             </router-link>
-            <router-link
-              to="remont-domov"
-              class="flex items-center mr-6 text-base leading-5"
+            <router-link to="/remont-kvartir" class="nav-el"
+              >Ремонт квартир
+            </router-link>
+            <router-link to="/remont-domov" class="nav-el"
               >Ремонт домов
               <svg
                 class=""
@@ -41,7 +56,7 @@
                   d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
                 /></svg
             ></router-link>
-            <a href="#" class="flex items-center mr-6 text-base leading-5"
+            <router-link to="/project" class="nav-el"
               >Портфолио
               <svg
                 class=""
@@ -52,20 +67,14 @@
                   fill="currentColor"
                   d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
                 /></svg
-            ></a>
+            ></router-link>
           </div>
           <div class="flex">
-            <a href="#" class="flex items-center mr-6 text-base leading-5"
-              >О компании
-            </a>
-            <a href="#" class="flex items-center mr-6 text-base leading-5"
-              >Контакты
-            </a>
-            <a href="#" class="flex items-center mr-6 text-base leading-5"
-              >Блог
-            </a>
+            <a href="#" class="nav-el">О компании </a>
+            <a href="#" class="nav-el">Контакты </a>
+            <a href="#" class="nav-el">Блог </a>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center tab-land:hidden">
             <div class="mt-1 mr-6 text-2xl font-bold">+7 (777) 420-69-69</div>
             <div class="flex items-center mr-4">
               <a href="#" class="mr-3">
@@ -89,8 +98,8 @@
     </div>
     <router-view />
     <!-- fff -->
-    <div class="py-10 text-white bg-dark">
-      <div class="max-w-6xl mx-auto">
+    <div class="hidden py-10 text-white bg-dark tab-land-up:block">
+      <div class="container mx-auto">
         <div class="flex flex-col">
           <h1 class="text-2xl font-bold">Хотите знать больше о ремонте?</h1>
           <h3 class="leading-normal">Напишите имя и номер телефона</h3>
@@ -108,7 +117,7 @@
               size="28"
             />
             <button
-              class="px-5 py-2 font-semibold text-black rounded-md bg-d_tangerine"
+              class="px-5 py-2 font-bold text-black rounded-md bg-d_tangerine"
             >
               Получить консультацию
             </button>
@@ -117,7 +126,7 @@
       </div>
     </div>
     <div class="flex py-10 bg-darker">
-      <div class="flex w-full max-w-6xl mx-auto text-white">
+      <div class="container flex w-full mx-auto text-white">
         <div class="flex flex-col w-1/4">
           <a href="#" class="footer-links">Ремонт квартир</a>
           <a href="#" class="footer-links">Ремонт домов</a>

@@ -2,7 +2,7 @@
   <!-- cards -->
   <div class="pb-32">
     <div class="py-12 bg-solitude">
-      <div class="relative max-w-6xl pb-24 mx-auto">
+      <div class="relative container pb-24 mx-auto">
         <h1 class="ml-4 text-4xl font-bold">Цены на ремонт загородного дома</h1>
         <div class="flex items-stretch mt-8 mb-4">
           <div

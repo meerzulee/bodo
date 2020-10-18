@@ -1,98 +1,26 @@
 <template>
   <div class="home">
-    <div class="flex flex-col max-w-6xl mx-auto">
-      <h1 class="mt-12 font-bold text-7sm">Ремонт квартир без забот</h1>
-      <h3 class="text-2xl font-light leading-snug text-justify">
+    <div class="flex flex-col container mx-auto">
+      <h1 class="mt-12 heading-1">Ремонт квартир без забот</h1>
+      <h3 class="text-justify simple-text">
         Дизайн интерьера, ремонт квартиры, комплектация — <br />
         решение любых вопросов в одной компании.
       </h3>
     </div>
     <!-- top carousel start -->
-    <div class="mt-20">
-      <div class="pt-12 pb-220 bg-solitude">
-        <div class="relative z-0 max-w-6xl mx-auto">
-          <!-- box -->
-          <div class="z-20 px-12 py-10 mt-5 bg-white w-380">
-            <h1 class="text-2xl font-bold leading-normal">
-              Создаем уютные квартиры
-            </h1>
-            <p class="my-5 text-xl font-light leading-6">
-              Посмотрите портфолио квартир, в которых мы недавно завершили
-              ремонт.
-            </p>
-            <a href="#" class="text-blue-700">Смотреть портфолио →</a>
-          </div>
-          <div class="absolute left-0 w-full px-2 mt-6 -z-10 -top-1/2 ml-300">
-            <a href="#">
-              <img
-                src="../assets/images/h1.jpg"
-                class="w-11/12 max-h-670"
-                alt=""
-              />
-              <!-- infobar -->
-              <div
-                class="absolute bottom-0 left-0 flex items-center h-16 mb-20 ml-24 font-semibold bg-gray-300 border-l-4 border-royal_blue"
-              >
-                <p class="flex items-center ml-10 mr-3">
-                  Ремонт однокомнатной квартиры на ул. Сервантеса д.1 корп. 2
-                  <svg class="w-8 h-8" viewBox="0 0 24 24">
-                    <path
-                      fill="currentColor"
-                      d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                    />
-                  </svg>
-                </p>
-              </div>
-            </a>
-            <!-- chevron -->
-            <div class="absolute bottom-0 left-0 flex mb-20 -ml-16">
-              <!-- chevron left -->
-              <div
-                class="flex items-center justify-center bg-white hover:bg-royal_blue"
-              >
-                <svg
-                  class="w-16 h-16 fill-current stroke-0 hover:text-white text-royal_blue"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
-                  />
-                </svg>
-              </div>
-              <!-- chevron right -->
-              <div
-                class="flex items-center justify-center bg-white hover:bg-royal_blue"
-              >
-                <svg
-                  class="w-16 h-16 fill-current stroke-0 hover:text-white text-royal_blue"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div></div>
-        </div>
-      </div>
-    </div>
+    <Carousel />
     <!-- end -->
     <!-- section -->
-    <div class="mt-32">
+    <div class="mt-20">
       <div class="bg-gradient-to-t from-solitude">
-        <div class="relative max-w-6xl px-5 pb-40 mx-auto mt-20">
-          <p class="text-2xl font-light text-justify">
+        <div class="relative container px-5 pb-40 mx-auto mt-20">
+          <p class="text-justify simple-text">
             Ищете компанию по ремонту квартир в Москве? Мы фанатично относимся к
             качеству и отвечаем за него. Берем на себя все заботы — от
             согласования перепланировки до финальной уборки после окончания
             работ.
           </p>
-          <h1 class="mt-24 text-4xl font-bold">
+          <h1 class="mt-24 heading-5">
             Хороший ремонт квартиры начинается с дизайна
           </h1>
           <!-- slider component -->
@@ -148,7 +76,7 @@
             </div>
           </div>
           <div class="absolute w-3/4 p-8 mt-20 bg-d_tangerine">
-            <p class="text-2xl font-light text-justify text-black">
+            <p class="text-justify text-black simple-text">
               Хороший дизайн-проект — тот, который легко реализовать. Наши
               дизайнеры создают максимально продуманное и удобное решение,
               учитывая каждую мелочь. Правильно выполненный дизайн-проект
@@ -158,14 +86,13 @@
         </div>
       </div>
     </div>
-    <!--  -->
+
     <div class="mt-48">
-      <div class="max-w-6xl px-6 mx-auto">
-        <h1 class="text-4xl tracking-wider">
+      <div class="container px-6 mx-auto">
+        <h1 class="tracking-wider heading-5">
           <span class="font-black">КАЧЕСТВЕННЫЙ РЕМОНТ </span>
           <span class="font-semibold">МОЖЕТ БЫТЬ БЫСТРЫМ</span> <br />
-          <span
-            class="font-light leading-tight tracking-wide text-justify text-6sm"
+          <span class="tracking-wide text-justify heading-3"
             >bodo — первая строительная компания Бишкека, внедрившая современные
             технологии комплексно во все процессы ремонта квартир</span
           >
@@ -173,11 +100,11 @@
 
         <div class="flex pt-4 mt-12">
           <div class="flex flex-col justify-center w-5/12 -mt-10">
-            <h1 class="text-4xl font-bold leading-none">
+            <h1 class="leading-none heading-5">
               Считаем смету <br />
               за 30 мин
             </h1>
-            <p class="my-8 text-2xl font-light text-justify">
+            <p class="my-8 text-justify simple-text">
               Инновационное решение от компании «Авальремонт» — расчет точной
               сметы на работы и черновые материалы прямо во время замера. Всего
               30 минут — и смета готова!
@@ -253,12 +180,11 @@
       </div>
     </div>
 
-    <!--  -->
     <PriceCard />
 
     <!-- mosaic -->
     <div class="mt-8 mb-20 bg-white">
-      <div class="flex flex-col max-w-6xl mx-auto">
+      <div class="flex flex-col container mx-auto">
         <h1 class="mb-10 text-4xl font-bold">Как мы работаем:</h1>
         <!-- tabs -->
         <div class="flex flex-col">
@@ -372,11 +298,12 @@
 
 <script>
 // @ is an alias to /src
-import PriceCard from '../components/PriceCard'
-import WorkMosaic from '../components/WorkMosaic'
+import Carousel from '@/components/Carousel.vue'
+import PriceCard from '@/components/PriceCard'
+import WorkMosaic from '@/components/WorkMosaic'
 export default {
   name: 'Home',
-  components: { PriceCard, WorkMosaic },
+  components: { PriceCard, WorkMosaic, Carousel },
   data() {
     return {
       openTab: 1,

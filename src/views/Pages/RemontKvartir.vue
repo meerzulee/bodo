@@ -1,63 +1,15 @@
 <template>
   <div class="remont-kvartir">
-    <div class="relative pb-12">
-      <!-- bg -->
-      <div class="absolute inset-0 w-full h-full -z-10">
-        <img
-          src="@/assets/images/bg-kvartir.png"
-          class="z-0 object-cover w-full h-full"
-          alt=""
-        />
-        <div class="absolute inset-0 w-full h-full bg-smoke"></div>
-      </div>
-
-      <div class="max-w-6xl pt-10 mx-auto text-white">
-        <!-- #TODO: navigation-->
-        <div class="flex flex-col">
-          <h1 class="mt-20 heading-huge">РЕМОНТ КВАРТИР «ПОД КЛЮЧ»</h1>
-
-          <div class="flex flex-col justify-between w-1/2 mt-10">
-            <div class="flex items-center">
-              <p class="text-xl font-bold">РЕМОНТ «ПОД КЛЮЧ» — ЭТО:</p>
-            </div>
-            <div class="flex flex-wrap mt-6">
-              <div
-                class="flex items-center w-1/2 mb-6"
-                v-for="(item, index) in [
-                  'Дизайн–проект',
-                  'Закупка материалов',
-                  'Ремонт',
-                  'Соблюдение сроков',
-                ]"
-                :key="index"
-              >
-                <img src="@/assets/images/check.png" class="w-6 h-6" alt="" />
-                <p class="ml-3 text-lg font-thin">{{ item }}</p>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="flex flex-col pl-4 mt-10 border-l-4 border-white">
-            <div>
-              <button class="px-5 py-4 font-semibold text-black bg-d_tangerine">
-                Получить консультацию
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Header :data="vdata" house />
     <PriceCard />
     <!--  -->
-    <div class="max-w-6xl mx-auto mt-8">
+    <div class="container mx-auto mt-8">
       <div class="flex flex-col">
-        <h1 class="text-4xl font-bold">
-          Правильный ремонт квартир «под ключ» — это:
-        </h1>
+        <h1 class="heading-5">Правильный ремонт квартир «под ключ» — это:</h1>
         <div class="flex mt-8">
           <!-- left -->
           <div class="flex flex-col w-7/12">
-            <p class="text-lg font-light leading-7">
+            <p class="small-light">
               Идеальный баланс между качеством проделанной работы,
               высокотехнологичными материалами и приемлемой ценой. <br />
               Возможно вы планируете просто освежить внешний вид квартиры, или
@@ -85,34 +37,8 @@
                 {{ y }}
               </li>
             </ul>
-            <!--  -->
-            <div class="flex w-full p-8 mt-8 bg-royal_blue">
-              <button
-                class="px-5 py-4 font-semibold text-gray-800 bg-d_tangerine"
-              >
-                Хочу ремонт «под ключ»
-              </button>
-              <div class="flex items-center ml-8">
-                <a href="tel:+ 123 123 123" class="text-lg font-bold text-white"
-                  >+123 (123) 456 789</a
-                >
-
-                <a href="#" class="mx-3">
-                  <img
-                    src="@/assets/images/icons/telegram.png"
-                    class="w-6 h-6"
-                    alt=""
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="@/assets/images/icons/whatsapp.png"
-                    class="w-6 h-^"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
+            <!-- CTA -->
+            <CTA />
           </div>
           <!-- right -->
           <div class="w-5/12 pl-10 -mt-4">
@@ -194,10 +120,8 @@
             </div>
           </div>
           <div class="flex flex-col justify-center w-7/12 px-20">
-            <h1 class="text-4xl font-bold leading-none">
-              Высокое качество работ
-            </h1>
-            <p class="my-8 text-xl font-light leading-tight text-justify">
+            <h1 class="big-text">Высокое качество работ</h1>
+            <p class="my-8 descr">
               Компания Авальремонт активно использует высокотехнологичное
               оборудование в работе “под ключ” в Москве и подмосковье. Те услуги
               по ремонту, которые ранее проводились только вручную, теперь
@@ -218,13 +142,13 @@
             </div>
           </div>
           <div class="flex flex-col justify-center w-7/12 px-20">
-            <h1 class="text-4xl font-bold leading-snug">
+            <h1 class="heading-5">
               <span class="text-2xl"
                 >Закупка чистовых материалов и мебели
               </span>
               <span>ПО ВЫГОДНЫМ ЦЕНАМ </span>
             </h1>
-            <p class="my-8 text-lg font-light leading-tight text-justify">
+            <p class="my-6 descr">
               Мы давно и плодотворно сотрудничаем с большим количеством торговых
               марок чистовых материалов и мебели, поэтому закупаем все
               необходимое по выгодным ценам. Внедренная программа лояльности
@@ -258,7 +182,7 @@
         </div>
         <div class="mt-24">
           <div class="flex flex-col"></div>
-          <h1 class="mb-8 text-4xl font-bold leading-none">«Почему мы?»</h1>
+          <h1 class="mb-8 big-text">«Почему мы?»</h1>
           <p class="descr">
             Авальремонт очень много времени и финансов уделяет повышению
             квалификации сотрудников. Мы постоянно инвестируем в обучение
@@ -287,9 +211,7 @@
             риск протечек, а также показывает более высокую износостойкость
             именно поэтому они широко распространены в Европе.
           </p>
-          <h1 class="mt-12 mb-8 text-4xl font-bold leading-none">
-            Этапы ремонта квартир «под ключ»
-          </h1>
+          <h1 class="mt-12 mb-8 big-text">Этапы ремонта квартир «под ключ»</h1>
           <p class="descr">
             Сотрудничество с заказчиком, мы начинаем с разработки
             дизайн-проекта, сметы. Пожалуй, это самый важный момент, поскольку
@@ -315,9 +237,7 @@
             генеральная уборка помещения после которой клиенту возвращаются
             ключи и выдается гарантия.
           </p>
-          <h1 class="mt-12 mb-8 text-4xl font-bold leading-none">
-            Сколько стоит ремонт?
-          </h1>
+          <h1 class="mt-12 mb-8 big-text">Сколько стоит ремонт?</h1>
           <p class="descr">
             Цена хорошей реставрации квартиры “под ключ” формируется на
             основании метража помещения, технических нюансов, качества
@@ -337,20 +257,34 @@
 </template>
 
 <script>
+import Header from '@/components/Header'
+import CTA from '@/components/Buttons/CTA'
+
 import PriceCard from '@/components/PriceCard'
 import WorkMosaic from '@/components/WorkMosaic'
 import FAQ from '@/components/FAQ'
 
 export default {
-  components: { PriceCard, WorkMosaic, FAQ },
+  components: { PriceCard, WorkMosaic, FAQ, Header, CTA },
   data() {
     return {
       textArr: [
         'Точный расчет стоимости ремонта, до его начала;',
         'Возможность создания не только красивого, но и практичного дома;',
-        'Страховка от непредвиденных затрат в процессе ремонта;',
+        'Страхо вка от непредвиденных затрат в процессе ремонта;',
         'Исключение необдуманных решений при реставрации.',
       ],
+      vdata: {
+        heading: 'РЕМОНТ КВАРТИР «ПОД КЛЮЧ»',
+        subheading: 'РЕМОНТ «ПОД КЛЮЧ» — ЭТО:',
+        features: [
+          'Дизайн–проект',
+          'Закупка материалов',
+          'Ремонт',
+          'Соблюдение сроков',
+        ],
+        image: require('@/assets/images/bg-kvartir.png'),
+      },
     }
   },
 }

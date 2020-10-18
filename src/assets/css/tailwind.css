@@ -1,6 +1,44 @@
 @tailwind base;
-
+@import "./Roboto.css";
+@import "./Montserrat.css";
 @tailwind components;
+html{
+    @apply font-body
+}
+.nav-el{
+    @apply flex items-center mr-6 text-base leading-5
+}
+.heading-1{
+    @apply font-bold text-7sm leading-snug font-montserrat
+}
+.heading-3{
+    @apply text-6sm font-light leading-tight
+}
+.heading-5{
+    @apply text-4xl font-bold leading-tight
+}
+.big-text{
+    @apply text-4xl font-bold leading-none  
+}
+.simple-text{
+    @apply text-2xl font-light leading-snug
+}
+.small-black {
+    @apply text-lg font-bold leading-relaxed
+}
+.small-light {
+    @apply text-lg font-light leading-relaxed
+}
+.body-text {
+    @apply font-light text-base
+}
+.descr{
+    @apply text-xl font-light leading-snug text-justify
+}
+
+.gallery-frame{
+    @apply w-full h-auto
+}
 
 .tab-active{
     @apply cursor-pointer pb-2 mr-8 border-b-4 border-royal_blue
@@ -24,15 +62,8 @@
 .small-white{
     @apply text-xl
 }
-.small-black{
-    @apply text-lg font-bold leading-relaxed
-}
-.big-text{
-    @apply text-4xl font-bold leading-none
-}
-.descr{
-    @apply text-xl font-light leading-tight text-justify
-}
+
+
 
 @tailwind utilities;
 .know-more{
