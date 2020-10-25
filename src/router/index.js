@@ -46,6 +46,10 @@ const routes = [
     name: 'Test',
     component: Test
   },
+  {
+    path: '/*',
+    component: Home
+  },
   ...prefixRoutes('/remont-kvartir',
     [
       {

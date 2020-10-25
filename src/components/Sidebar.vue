@@ -30,7 +30,7 @@
       >
         <div
           v-if="isActive"
-          class="absolute top-0 left-0 flex flex-col h-screen bg-red-600 sidebar-overlay w-300"
+          class="absolute top-0 left-0 flex flex-col h-screen bg-darker sidebar-overlay w-300"
         >
           <router-link to="/" class="">
             <div

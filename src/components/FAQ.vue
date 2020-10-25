@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white faq">
-    <div class="container px-8 py-24 mx-auto">
+    <div class="container px-8 py-24 mx-auto tab-mini-down:px-0">
       <h1 class="m-4 mb-6 text-4xl font-bold leading-none">
         Часто задаваемые вопросы
       </h1>

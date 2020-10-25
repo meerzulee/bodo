@@ -7,7 +7,7 @@
         <div class="container mx-auto">
           <div class="px-4 pb-4">
             <h1 class="mb-4 text-4xl font-medium leading-none">
-              Ремонт домов с компанией “Авальремонт”
+              Ремонт домов с компанией “Bodo”
             </h1>
             <p class="descr">
               Мы являемся лидерами и новаторами в сфере строительных услуг.
@@ -49,7 +49,7 @@
     <!--  -->
     <PriceCardDom />
     <!--  -->
-    <div class="container mx-auto mt-8">
+    <div class="container mx-auto mt-8 phone-down:mt-4">
       <div class="flex flex-col">
         <WorkMosaic />
         <!-- почему мы -->

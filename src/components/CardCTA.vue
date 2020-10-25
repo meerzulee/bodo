@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute w-1/2 p-4 px-6 mx-4 mt-12 text-white tab-mini-down:w-full laptop-down:w-auto bg-royal_blue tab-mini-down:text-center"
+    class="absolute w-1/2 p-4 px-6 mx-4 mt-12 text-white phone-down:relative tab-mini-down:w-full tab-mini-down:mx-0 laptop-down:w-auto bg-royal_blue tab-mini-down:text-center"
   >
     <h1 class="text-2xl font-bold">Нужна консультация специалиста?</h1>
     <p class="mt-6 mb-8 font-light tab-mini-down:my-2 tab-mini-down:text-xl">
@@ -16,9 +16,9 @@
       </button>
       <div class="flex items-center laptop-down:ml-8">
         <a
-          href="tel:+ 123 123 123"
+          href="tel:+996223120120"
           class="text-lg font-bold tab-mini-down:text-2xl"
-          >+123 (123) 456 789</a
+          >+996 223 120 120</a
         >
 
         <a href="#" class="mx-3">

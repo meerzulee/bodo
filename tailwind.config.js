@@ -60,6 +60,11 @@ module.exports = {
         // <900
         min: '48.0001em',
       },
+      'phone-down': {
+        // 471-576px
+        max: '36em',
+
+      },
 
 
     },
@@ -142,8 +147,9 @@ module.exports = {
           '@screen tab-mini': {
             maxWidth: '540px'
           },
-          '@screen phone': {
-            maxWidth: '100%'
+          '@screen phone-down': {
+            maxWidth: '100%',
+            padding: '0 28px'
           },
 
         }

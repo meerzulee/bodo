@@ -37,7 +37,7 @@
                 <a href="#">
                   <img
                     src="../assets/images/h1.jpg"
-                    class="w-11/12 max-h-670 tab-land-down:w-full"
+                    class="w-11/12 max-h-670 phone-down:h-400 tab-land-down:w-full"
                     alt=""
                   />
                   <!-- infobar -->

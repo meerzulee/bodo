@@ -1,8 +1,8 @@
 <template>
   <!-- cards -->
-  <div class="pb-32">
+  <div class="pb-32 phone-down:pb-2">
     <div class="py-12 bg-solitude">
-      <div class="container relative pb-24 mx-auto">
+      <div class="container relative pb-24 mx-auto phone-down:pb-4">
         <h1 class="ml-4 text-4xl font-bold">
           Цены на ремонт квартир «под ключ»:
         </h1>

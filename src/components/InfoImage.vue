@@ -3,7 +3,7 @@
     <div class="tab-mini-up:hidden">
       <swiper v-if="true" class="swiper" :options="swiperOption">
         <swiper-slide
-          ><div class="flex pt-4 mx-8 tab-mini-down:flex-col">
+          ><div class="flex px-2 pt-4 tab-mini-down:flex-col">
             <div
               class="flex flex-col justify-center w-5/12 tab-mini-down:w-full tab-mini-down:mx-auto tab-land-down:w-6/12"
             >
@@ -135,6 +135,9 @@ export default {
     return {
       swiperOption: {
         loop: true,
+        autoplay: {
+          delay: 5000,
+        },
         pagination: {
           el: '.ii-swiper-pagination',
           clickable: true,

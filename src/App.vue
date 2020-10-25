@@ -10,7 +10,7 @@
         </div>
 
         <div class="flex items-center">
-          <div class="mt-1 mr-6 text-2xl font-bold">+7 (777) 420-69-69</div>
+          <div class="mt-1 mr-6 text-2xl font-bold">+996 223 120 120</div>
           <div class="flex items-center mr-4">
             <a href="#" class="mr-3">
               <img
@@ -128,39 +128,45 @@
       </div>
     </div>
     <div class="flex py-10 bg-darker">
-      <div class="container flex w-full mx-auto text-white">
-        <div class="flex flex-col w-1/4">
+      <div
+        class="container flex w-full mx-auto text-white phone-down:flex-wrap"
+      >
+        <div class="flex flex-col w-1/4 phone-down:w-1/3">
           <a href="#" class="footer-links">Ремонт квартир</a>
           <a href="#" class="footer-links">Ремонт домов</a>
         </div>
-        <div class="flex flex-col w-1/4">
+        <div class="flex flex-col w-1/4 phone-down:px-5 phone-down:w-1/3">
           <a href="#" class="footer-links">Портфолио ремонтов</a>
           <a href="#" class="footer-links">Блог</a>
         </div>
-        <div class="flex flex-col w-1/4">
+        <div class="flex flex-col w-1/4 phone-down:w-1/3">
           <a href="#" class="footer-links">Контакты</a>
           <a href="#" class="footer-links">О компании</a>
         </div>
-        <div class="flex flex-col w-1/4">
+        <div
+          class="flex flex-col w-1/4 phone-down:justify-center phone-down:w-full"
+        >
           <h3 class="font-semibold">Телефон</h3>
-          <div class="flex">
-            <a href="tel:+123123123" class="text-xl font-bold"
-              >+1 (231) 23123</a
+          <div class="flex phone-down:my-2 phone-down:items-center">
+            <a href="tel:+996223120120" class="text-2xl font-bold"
+              >+996 223 120 120</a
             >
-            <a href="#" class="mx-3">
-              <img
-                src="./assets/images/icons/telegram.png"
-                class="w-6 h-6"
-                alt=""
-              />
-            </a>
-            <a href="#">
-              <img
-                src="./assets/images/icons/whatsapp.png"
-                class="w-6 h-6"
-                alt=""
-              />
-            </a>
+            <div class="flex phone-down:mx-2">
+              <a href="#" class="mx-3 phone-down:ml-0">
+                <img
+                  src="./assets/images/icons/telegram.png"
+                  class="social-icons"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/images/icons/whatsapp.png"
+                  class="social-icons"
+                  alt=""
+                />
+              </a>
+            </div>
           </div>
           <a href="#" class="flex text-lg font-light underline"
             >Заказать звонок</a

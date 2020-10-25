@@ -1,15 +1,19 @@
 <template>
   <div
-    class="flex w-full p-8 mt-8 tab-land-down:mx-4 bg-royal_blue tab-land-down:justify-between"
+    class="flex w-full p-8 mt-8 phone-down:flex-col tab-land-down:mx-4 bg-royal_blue tab-land-down:justify-between"
   >
     <button
-      class="px-5 py-4 font-semibold text-gray-800 tab-land-down:p-3 bg-d_tangerine"
+      class="px-5 py-4 font-semibold text-gray-800 phone-down:text-xl tab-land-down:p-3 bg-d_tangerine"
     >
       Хочу ремонт «под ключ»
     </button>
-    <div class="flex items-center ml-8 tab-land-down:ml-0">
-      <a href="tel:+ 123 123 123" class="text-lg font-bold text-white"
-        >+123 (123) 456 789</a
+    <div
+      class="flex items-center ml-8 phone-down:justify-center phone-down:mt-3 phone-down:ml-0 tab-land-down:ml-0"
+    >
+      <a
+        href="tel:+996 223 120 120"
+        class="text-lg font-bold text-white phone-down:text-xl"
+        >+996 223 120 120</a
       >
 
       <a href="#" class="mx-3">

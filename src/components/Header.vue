@@ -13,9 +13,13 @@
       <div class="container pt-10 mx-auto text-white tab-land:px-8">
         <!-- content house -->
         <div v-if="house" class="flex flex-col">
-          <h1 class="mt-20 heading-huge">{{ data.heading }}</h1>
+          <h1 class="mt-20 heading-huge phone-down:text-5xl">
+            {{ data.heading }}
+          </h1>
           <!-- subheading & features -->
-          <div class="flex flex-col justify-between w-1/2 mt-10">
+          <div
+            class="flex flex-col justify-between w-1/2 mt-10 phone-down:w-full"
+          >
             <div class="flex items-center">
               <p class="text-xl font-bold">{{ data.subheading }}</p>
             </div>
@@ -37,7 +41,10 @@
         </div>
         <!-- content houseType -->
         <div v-if="houseType" class="flex flex-col">
-          <h1 class="mt-20 heading-huge" v-html="data.heading"></h1>
+          <h1
+            class="mt-20 heading-huge phone-down:text-5xl"
+            v-html="data.heading"
+          ></h1>
           <div class="flex flex-col justify-between w-2/3 mt-10">
             <div class="flex items-center">
               <p class="text-xl">{{ data.description }}</p>
@@ -57,8 +64,8 @@
                 Узнать точную стоимость
               </button>
               <div class="flex mt-8">
-                <a href="tel:+ 123 123 123" class="text-lg font-bold"
-                  >+123 (123) 456 789</a
+                <a href="tel:+996 223 120 120" class="text-lg font-bold"
+                  >+996 223 120 120</a
                 >
 
                 <a href="#" class="mx-3">
@@ -81,9 +88,14 @@
         </div>
         <!-- content project -->
         <div v-if="project" class="flex flex-col">
-          <h1 class="mt-20 heading-huge" v-html="data.heading"></h1>
+          <h1
+            class="mt-20 heading-huge phone-down:text-5xl"
+            v-html="data.heading"
+          ></h1>
 
-          <div class="flex flex-wrap justify-between w-3/4 mt-12">
+          <div
+            class="flex flex-wrap justify-between w-3/4 mt-12 phone-down:w-full"
+          >
             <div
               class="flex items-center w-1/2 my-3"
               v-for="(item, index) in data.info"

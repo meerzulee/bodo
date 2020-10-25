@@ -1,11 +1,16 @@
 <template>
   <div class="home">
     <div class="container flex flex-col mx-auto">
-      <h1 class="mt-12 tab-land-down:mt-8 heading-1 tab-land-down:text-6sm">
+      <h1
+        class="mt-12 tab-land-down:mt-8 heading-1 phone-down:text-4xl tab-land-down:text-6sm"
+      >
         Ремонт квартир без забот
       </h1>
-      <h3 class="text-justify tab-land-down:mt-3 simple-text">
-        Дизайн интерьера, ремонт квартиры, комплектация — <br />
+      <h3
+        class="text-justify tab-land-down:mt-3 phone-down:text-xl simple-text"
+      >
+        Дизайн интерьера, ремонт квартиры, комплектация —
+        <br class="phone-down:hidden" />
         решение любых вопросов в одной компании.
       </h3>
     </div>
@@ -16,11 +21,11 @@
     <div class="mt-20 tab-land-down:mt-16">
       <div class="bg-gradient-to-t from-solitude">
         <div
-          class="container relative px-5 pb-40 mx-auto mt-20 tab-land-down:mt-16"
+          class="container relative px-5 pb-40 mx-auto mt-20 phone-down:pb-12 tab-land-down:mt-16"
         >
           <p class="text-justify simple-text">
-            Ищете компанию по ремонту квартир в Москве? Мы фанатично относимся к
-            качеству и отвечаем за него. Берем на себя все заботы — от
+            Ищете компанию по ремонту квартир в Бишкеке? Мы фанатично относимся
+            к качеству и отвечаем за него. Берем на себя все заботы — от
             согласования перепланировки до финальной уборки после окончания
             работ.
           </p>
@@ -32,7 +37,7 @@
           <Slider />
 
           <div
-            class="absolute w-3/4 p-8 mt-20 bg-d_tangerine tab-land-down:w-10/12"
+            class="absolute w-3/4 p-8 mt-20 phone-down:relative phone-down:w-full bg-d_tangerine tab-land-down:w-10/12"
           >
             <p class="text-justify text-black simple-text">
               Хороший дизайн-проект — тот, который легко реализовать. Наши
@@ -45,7 +50,7 @@
       </div>
     </div>
 
-    <div class="mt-48 tab-land-down:mt-56">
+    <div class="mt-48 phone-down:mt-12 tab-land-down:mt-56">
       <div class="container px-6 mx-auto">
         <h1 class="tracking-wider heading-5 tab-land-down:text-3xl">
           <span class="font-black">КАЧЕСТВЕННЫЙ РЕМОНТ </span>
@@ -70,7 +75,9 @@
     <!-- mosaic -->
     <div class="mt-8 mb-20 bg-white tab-mini-down:mt-16">
       <div class="container flex flex-col mx-auto">
-        <h1 class="mb-10 text-4xl font-bold">Как мы работаем:</h1>
+        <h1 class="mb-10 text-4xl font-bold phone-down:mb-2">
+          Как мы работаем:
+        </h1>
         <!-- tabs -->
         <InfoTabs />
         <WorkMosaic class="mt-8" />

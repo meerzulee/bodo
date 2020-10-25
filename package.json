@@ -1,9 +1,9 @@
 {
-  "name": "RemontKvartir",
+  "name": "Bodo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --port 6060",
+    "serve": "vue-cli-service serve --port 3030",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },

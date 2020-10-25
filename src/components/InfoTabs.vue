@@ -34,7 +34,7 @@
       <div
         v-for="(x, index) in tabText"
         :key="index"
-        class="flex px-4 py-8"
+        class="flex px-4 py-8 tab-mini-down:px-1"
         :class="[openTab === index + 1 ? 'block' : 'hidden']"
       >
         <div class="w-5/12 tab-mini-down:hidden tab-land-down:w-4/12">
@@ -47,7 +47,7 @@
         <div
           class="relative flex flex-col justify-between w-7/12 px-4 tab-mini-down:px-0 tab-mini-down:w-full tab-land-down:w-8/12"
         >
-          <ul class="text-xl font-light">
+          <ul class="text-xl font-light tab-mini-down:text-2xl">
             <li
               class="flex items-center my-4"
               v-for="(y, index2) in x"
@@ -87,9 +87,9 @@
               </button>
               <div class="flex items-center">
                 <a
-                  href="tel:+ 123 123 123"
+                  href="tel:+996 223 120 120"
                   class="text-lg font-bold tab-mini-down:text-2xl"
-                  >+123 (123) 456 789</a
+                  >+996 223 120 120</a
                 >
 
                 <a href="#" class="mx-3">

@@ -3,12 +3,12 @@
     <Header :data="vdata" house />
     <PriceCard />
     <!--  -->
-    <div class="container mx-auto mt-8">
+    <div class="container mx-auto mt-8 tab-mini:mt-24">
       <div class="flex flex-col">
         <h1 class="heading-5">Правильный ремонт квартир «под ключ» — это:</h1>
-        <div class="flex mt-8">
+        <div class="flex mt-8 tab-mini-down:flex-col">
           <!-- left -->
-          <div class="flex flex-col w-7/12">
+          <div class="flex flex-col w-7/12 tab-mini-down:w-full">
             <p class="small-light">
               Идеальный баланс между качеством проделанной работы,
               высокотехнологичными материалами и приемлемой ценой. <br />
@@ -41,8 +41,12 @@
             <CTA />
           </div>
           <!-- right -->
-          <div class="w-5/12 pl-10 -mt-4">
-            <div class="flex items-center justify-between mb-2">
+          <div
+            class="w-5/12 pl-10 -mt-4 tab-mini-down:mt-10 tab-mini-down:w-full"
+          >
+            <div
+              class="flex items-center justify-between mb-2 tab-mini-down:hidden"
+            >
               <h3 class="small-black">Примеры дизайн проектов</h3>
               <!-- chevron -->
               <div class="flex">
@@ -91,10 +95,10 @@
                 </h1>
                 <h3 class="my-3 mb-10 text-6xl font-bold">62 м<sup>2</sup></h3>
                 <div class="mb-8">
-                  <a
-                    href="#"
+                  <router-link
+                    to="/project"
                     class="px-4 py-3 pt-2 text-lg border border-white hover:text-gray-800 hover:bg-gray-300"
-                    >Смотреть дизайн проект</a
+                    >Смотреть дизайн проект</router-link
                   >
                 </div>
               </div>
@@ -102,11 +106,15 @@
           </div>
         </div>
         <!-- agregat -->
-        <div class="flex mt-20">
-          <div class="w-5/12 tab-land-down:px-6">
+        <div class="flex mt-20 tab-mini-down:flex-col-reverse">
+          <div
+            class="w-5/12 tab-mini-down:w-3/4 tab-mini-down:mx-auto tab-land-down:px-6"
+          >
             <div class="relative">
               <div class="absolute top-0 right-0 mr-10 tab-land-down:mr-0">
-                <p class="text-lg font-light tab-land-down:text-base">
+                <p
+                  class="text-lg font-light tab-mini-down:hidden tab-land-down:text-base"
+                >
                   <span class="font-semibold">PFT G4 </span> <br />
                   Механизированная <br />
                   штукатурная станция
@@ -120,7 +128,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-center w-7/12 px-20 tab-land-down:px-8"
+            class="flex flex-col justify-center w-7/12 px-20 tab-mini-down:w-full tab-land-down:px-8"
           >
             <h1 class="big-text">Высокое качество работ</h1>
             <p class="my-8 descr">
@@ -133,9 +141,9 @@
           </div>
         </div>
         <!-- price -->
-        <div class="flex mt-20">
-          <div class="w-5/12">
-            <div class="relative mt-20">
+        <div class="flex mt-20 tab-mini-down:flex-col-reverse">
+          <div class="w-5/12 tab-mini-down:w-3/4 tab-mini-down:mx-auto">
+            <div class="relative mt-20 tab-mini-down:mt-4">
               <img
                 src="@/assets/images/cards.jpg"
                 class="h-auto max-w-full"
@@ -144,7 +152,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-center w-7/12 px-20 tab-land-down:px-8"
+            class="flex flex-col justify-center w-7/12 px-20 tab-mini-down:w-full tab-land-down:px-8"
           >
             <h1 class="heading-5 tab-land-down:flex tab-land-down:flex-col">
               <span class="text-2xl"
@@ -252,7 +260,7 @@
           </p>
         </div>
         <WorkMosaic />
-        <div class="my-4">
+        <div class="my-4 tab-mini-down:-ml-2">
           <FAQ />
         </div>
       </div>

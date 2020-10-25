@@ -16,8 +16,14 @@
 }
 @screen tab-mini-down{
     html {
-        /* 1rem 14px 12/16=81.25 */
+        /* 1rem 14px 12/16 */
         font-size: 75%
+    }
+}
+@screen phone-down{
+    html {
+        /* 1rem 14px 10/16 */
+        font-size: 62.5%
     }
 }
 
@@ -87,7 +93,11 @@ html{
 .footer-links:hover {
     @apply text-red-700
 }
-
+@screen phone-down {
+    .footer-links {
+        @apply  font-medium text-lg 
+    }
+}
 .heading-huge{
     @apply font-bold leading-tight text-7sm
 }
