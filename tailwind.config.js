@@ -52,7 +52,14 @@ module.exports = {
         // >900
         min: '62.1em',
       },
-
+      'tab-mini-down': {
+        // <900
+        max: '48em',
+      },
+      'tab-mini-up': {
+        // <900
+        min: '48.0001em',
+      },
 
 
     },
@@ -92,6 +99,7 @@ module.exports = {
       },
       inset: {
         '-1/2': '-50%',
+        '1/2': '50%',
       },
       maxHeight: {
         '432': '27rem',

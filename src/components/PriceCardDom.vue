@@ -24,16 +24,18 @@
                 class="flex items-center justify-between px-5 py-6 bg-white group-hover:bg-royal_blue"
               >
                 <h1
-                  class="text-2xl font-bold group-hover:text-white text-royal_blue"
+                  class="text-2xl font-bold tab-land-down:text-xl group-hover:text-white text-royal_blue"
                 >
                   {{ item.name }}
                 </h1>
                 <div
                   class="text-base font-bold text-black group-hover:text-white"
                 >
-                  от <span class="text-2xl">{{ item.price }}</span> сом/м<sup
-                    >2</sup
-                  >
+                  от
+                  <span class="text-2xl tab-land-down:text-xl">{{
+                    item.price
+                  }}</span>
+                  сом/м<sup>2</sup>
                 </div>
               </div>
               <!-- TODO: link -->

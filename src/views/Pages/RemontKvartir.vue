@@ -103,10 +103,10 @@
         </div>
         <!-- agregat -->
         <div class="flex mt-20">
-          <div class="w-5/12">
+          <div class="w-5/12 tab-land-down:px-6">
             <div class="relative">
-              <div class="absolute top-0 right-0 mr-10">
-                <p class="text-lg font-light">
+              <div class="absolute top-0 right-0 mr-10 tab-land-down:mr-0">
+                <p class="text-lg font-light tab-land-down:text-base">
                   <span class="font-semibold">PFT G4 </span> <br />
                   Механизированная <br />
                   штукатурная станция
@@ -119,7 +119,9 @@
               />
             </div>
           </div>
-          <div class="flex flex-col justify-center w-7/12 px-20">
+          <div
+            class="flex flex-col justify-center w-7/12 px-20 tab-land-down:px-8"
+          >
             <h1 class="big-text">Высокое качество работ</h1>
             <p class="my-8 descr">
               Компания Авальремонт активно использует высокотехнологичное
@@ -141,8 +143,10 @@
               />
             </div>
           </div>
-          <div class="flex flex-col justify-center w-7/12 px-20">
-            <h1 class="heading-5">
+          <div
+            class="flex flex-col justify-center w-7/12 px-20 tab-land-down:px-8"
+          >
+            <h1 class="heading-5 tab-land-down:flex tab-land-down:flex-col">
               <span class="text-2xl"
                 >Закупка чистовых материалов и мебели
               </span>

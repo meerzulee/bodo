@@ -2,12 +2,25 @@
 @import "./Roboto.css";
 @import "./Montserrat.css";
 
-@screen tab-land{
+@screen laptop-down{
     html {
         /* 1rem 14px 14/16=87.5 */
         font-size: 87.5%
     }
 }
+@screen tab-land-down{
+    html {
+        /* 1rem 14px 13/16=81.25 */
+        font-size: 81.25%
+    }
+}
+@screen tab-mini-down{
+    html {
+        /* 1rem 14px 12/16=81.25 */
+        font-size: 75%
+    }
+}
+
 
 @tailwind components;
 html{
@@ -24,7 +37,10 @@ html{
 }
 .heading-5{
     @apply text-4xl font-bold leading-tight
+
+   
 }
+
 .big-text{
     @apply text-4xl font-bold leading-none  
 }
@@ -54,6 +70,14 @@ html{
 .tab-inactive{
     @apply mr-8 text-blue-700 cursor-pointer border-b-0
 }
+@screen tab-mini-down {
+    .tab-active{
+        @apply  py-4 mr-8 border-b-4 border-royal_blue
+    }
+    .tab-inactive{
+        @apply mr-8 py-4 text-blue-700 cursor-pointer border-b-0
+    }
+}
 .pr-top < li < a {
       @apply my-2 underline 
 }
@@ -70,6 +94,34 @@ html{
 .small-white{
     @apply text-xl
 }
+
+.chevron-size {
+   @apply  w-16 h-16
+}
+@screen tab-land-down {
+    .chevron-size {
+        @apply  w-12 h-12
+     }
+     .heading-huge{
+        @apply text-6xl
+    }
+}
+
+
+.social-icons {
+    @apply w-8 h-8
+   }
+
+@screen tab-land-down {
+    .features-card-text{
+        @apply mt-10 text-lg font-semibold
+    }
+    .social-icons {
+        @apply w-8 h-8
+       }
+}
+
+
 
 
 

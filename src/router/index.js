@@ -5,6 +5,7 @@ import Project from '../views/ProjectPage.vue'
 import RemontKvartir from '../views/Pages/RemontKvartir.vue'
 import RemontDomov from '../views/Pages/RemontDomov.vue'
 import StandardRemont from '../views/Pages/Kvartir/Standard.vue'
+import Test from '../views/Test.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/project',
     name: 'Project',
     component: Project
+  },
+  {
+    path: '/test',
+    name: 'Test',
+    component: Test
   },
   ...prefixRoutes('/remont-kvartir',
     [

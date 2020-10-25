@@ -10,7 +10,10 @@
             class="object-cover w-full group-hover:opacity-25 h-505"
             alt=""
           />
-          <div class="absolute bottom-0 left-0 flex flex-col m-8 text-white">
+          <div class="absolute inset-0 w-full h-full bg-smoke-200"></div>
+          <div
+            class="absolute bottom-0 left-0 z-10 flex flex-col m-8 text-white"
+          >
             <h1 class="text-xl font-bold">
               ЖК Кутузов GRAD <br />
               62 м<sup>2</sup>
@@ -28,6 +31,7 @@
             class="object-cover w-full group-hover:opacity-25 h-505"
             alt=""
           />
+          <div class="absolute inset-0 w-full h-full bg-smoke-200"></div>
           <div class="absolute bottom-0 left-0 flex flex-col m-8 text-white">
             <h1 class="text-xl font-bold">
               ЖК Кутузов GRAD <br />
@@ -46,6 +50,7 @@
             class="object-cover w-full group-hover:opacity-25 h-505"
             alt=""
           />
+          <div class="absolute inset-0 w-full h-full bg-smoke-200"></div>
           <div class="absolute bottom-0 left-0 flex flex-col m-8 text-white">
             <h1 class="text-xl font-bold">
               ЖК Кутузов GRAD <br />
@@ -64,6 +69,7 @@
             class="object-cover w-full group-hover:opacity-25 h-505"
             alt=""
           />
+          <div class="absolute inset-0 w-full h-full bg-smoke-200"></div>
           <div class="absolute bottom-0 left-0 flex flex-col m-8 text-white">
             <h1 class="text-xl font-bold">
               ЖК Кутузов GRAD <br />
