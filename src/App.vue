@@ -76,7 +76,9 @@
             <a href="#" class="nav-el">Блог </a>
           </div>
           <div class="flex items-center tab-land:hidden">
-            <div class="mt-1 mr-6 text-2xl font-bold">+7 (777) 420-69-69</div>
+            <div class="mt-1 mr-6 text-2xl font-bold">
+              <a href="tel:+996 223 120 120">+996 223 120 120</a>
+            </div>
             <div class="flex items-center mr-4">
               <a href="#" class="mr-3">
                 <img
