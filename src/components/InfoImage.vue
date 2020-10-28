@@ -12,11 +12,12 @@
                 за 30 мин
               </h1>
               <p class="my-8 text-justify simple-text tab-land-down:text-xl">
-                Инновационное решение от компании «Авальремонт» — расчет точной
-                сметы на работы и черновые материалы прямо во время замера.
-                Всего 30 минут — и смета готова!
+                Инновационное решение от компании
+                <b class="font-black">BODO</b> — расчет точной сметы на работы и
+                черновые материалы прямо во время замера. Всего 30 минут — и
+                смета готова!
               </p>
-              <a href="#" class="text-blue-500">Узнать больше →</a>
+              <a href="#" class="text-royal_blue">Узнать больше →</a>
             </div>
             <div
               class="w-7/12 tab-mini-down:w-2/3 tab-mini-down:mt-4 tab-mini-down:mx-auto tab-land-down:w-6/12"
@@ -31,7 +32,7 @@
                 <div
                   class="absolute top-0 right-0 mr-10 tab-mini-down:mr-0 tab-land-down:mr-0"
                 >
-                  <p class="text-lg font-light tab-land-down:text-base">
+                  <p class="hidden text-lg font-light tab-land-down:text-base">
                     <span class="font-semibold">PFT G4 </span> <br />
                     Механизированная <br />
                     штукатурная станция
@@ -75,11 +76,11 @@
             за 30 мин
           </h1>
           <p class="my-8 text-justify simple-text tab-land-down:text-xl">
-            Инновационное решение от компании «Авальремонт» — расчет точной
-            сметы на работы и черновые материалы прямо во время замера. Всего 30
-            минут — и смета готова!
+            Инновационное решение от компании <b class="font-black">BODO</b> —
+            расчет точной сметы на работы и черновые материалы прямо во время
+            замера. Всего 30 минут — и смета готова!
           </p>
-          <a href="#" class="text-blue-500">Узнать больше →</a>
+          <a href="#" class="text-royal_blue">Узнать больше →</a>
         </div>
         <div
           class="w-7/12 tab-mini-down:w-2/3 tab-mini-down:mt-4 tab-mini-down:mx-auto tab-land-down:w-6/12"
@@ -93,7 +94,7 @@
             <div
               class="absolute top-0 right-0 mr-10 tab-mini-down:mr-0 tab-land-down:mr-0"
             >
-              <p class="text-lg font-light tab-land-down:text-base">
+              <p class="hidden text-lg font-light tab-land-down:text-base">
                 <span class="font-semibold">PFT G4 </span> <br />
                 Механизированная <br />
                 штукатурная станция

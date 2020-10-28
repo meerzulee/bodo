@@ -14,7 +14,7 @@
               Посмотрите портфолио квартир, в которых мы недавно завершили
               ремонт.
             </p>
-            <a href="#" class="text-blue-700">Смотреть портфолио →</a>
+            <a href="#" class="text-royal_blue">Смотреть портфолио →</a>
           </div>
 
           <div
@@ -29,7 +29,7 @@
                 Посмотрите портфолио квартир, в которых мы недавно завершили
                 ремонт.
               </p> -->
-              <a href="#" class="text-blue-700">Смотреть портфолио →</a>
+              <a href="#" class="text-royal_blue">Смотреть портфолио →</a>
             </div>
             <!-- /info -->
             <swiper class="swiper" :options="swiperOption">
@@ -93,7 +93,7 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-center w-full py-4">
+          <div class="flex justify-center w-full py-4 tab-mini-up:hidden">
             <div class="w-100 swiper-pagination" slot="pagination"></div>
           </div>
         </div>

@@ -70,7 +70,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'royal_blue': '#3665db',
+        'royal_blue': '#c0392b',
+        // 'royal_blue': '#3665db',
         'solitude': '#f2f4f7',
         'd_tangerine': '#FFB420',
         'dark': '#4C535B',

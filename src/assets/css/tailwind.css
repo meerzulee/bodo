@@ -77,14 +77,14 @@ html{
     @apply cursor-pointer pb-2 mr-8 border-b-4 border-royal_blue
 }
 .tab-inactive{
-    @apply mr-8 text-blue-700 cursor-pointer border-b-0
+    @apply mr-8 text-royal_blue cursor-pointer border-b-0
 }
 @screen tab-mini-down {
     .tab-active{
         @apply  py-4 mr-8 border-b-4 border-royal_blue
     }
     .tab-inactive{
-        @apply mr-8 py-4 text-blue-700 cursor-pointer border-b-0
+        @apply mr-8 py-4 text-royal_blue cursor-pointer border-b-0
     }
 }
 .pr-top < li < a {

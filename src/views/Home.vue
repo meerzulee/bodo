@@ -4,7 +4,7 @@
       <h1
         class="mt-12 tab-land-down:mt-8 heading-1 phone-down:text-4xl tab-land-down:text-6sm"
       >
-        Ремонт квартир без забот
+        Ремонт квартир и помещений под ключ
       </h1>
       <h3
         class="text-justify tab-land-down:mt-3 phone-down:text-xl simple-text"
@@ -57,8 +57,9 @@
           <span class="font-semibold">МОЖЕТ БЫТЬ БЫСТРЫМ</span> <br />
           <span
             class="tracking-wide text-justify heading-3 tab-land-down:text-4xl"
-            >bodo — первая строительная компания Бишкека, внедрившая современные
-            технологии комплексно во все процессы ремонта квартир</span
+            ><b class="font-black">BODO</b> — первая строительная компания
+            Бишкека, внедрившая современные технологии комплексно во все
+            процессы ремонта квартир</span
           >
         </h1>
 

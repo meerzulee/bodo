@@ -16,7 +16,7 @@
               tshow = !tshow
             }
           "
-          class="mt-2 text-blue-500 underline cursor-pointer"
+          class="mt-2 text-royal_blue underline cursor-pointer"
           >{{ tshow ? 'Показать еще' : 'Скрыть' }}</a
         >
       </div>
