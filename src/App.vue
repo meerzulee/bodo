@@ -12,14 +12,14 @@
         <div class="flex items-center">
           <div class="mt-1 mr-6 text-2xl font-bold">+996 223 120 120</div>
           <div class="flex items-center mr-4">
-            <a href="#" class="mr-3">
+            <a href="https://t.me/Bobur2323" class="mr-3">
               <img
                 src="./assets/images/icons/telegram.png"
                 class="w-full h-full"
                 alt=""
               />
             </a>
-            <a href="#">
+            <a href="https://wa.me/996223120120">
               <img
                 src="./assets/images/icons/whatsapp.png"
                 class="w-full h-full"
@@ -40,7 +40,7 @@
         >
           <div class="flex">
             <router-link to="/" class="nav-el tab-land:hidden"
-              >Bodo
+              ><img src="@/assets/logo.png" class="h-8" alt="" />
             </router-link>
             <router-link to="/remont-kvartir" class="nav-el"
               >Ремонт квартир
@@ -80,14 +80,14 @@
               <a href="tel:+996 223 120 120">+996 223 120 120</a>
             </div>
             <div class="flex items-center mr-4">
-              <a href="#" class="mr-3">
+              <a href="https://t.me/Bobur2323" class="mr-3">
                 <img
                   src="./assets/images/icons/telegram.png"
                   class="w-full h-full"
                   alt=""
                 />
               </a>
-              <a href="#">
+              <a href="https://wa.me/996223120120">
                 <img
                   src="./assets/images/icons/whatsapp.png"
                   class="w-full h-full"
@@ -154,14 +154,14 @@
               >+996 223 120 120</a
             >
             <div class="flex phone-down:mx-2">
-              <a href="#" class="mx-3 phone-down:ml-0">
+              <a href="https://t.me/Bobur2323" class="mx-3 phone-down:ml-0">
                 <img
                   src="./assets/images/icons/telegram.png"
                   class="social-icons"
                   alt=""
                 />
               </a>
-              <a href="#">
+              <a href="https://wa.me/996223120120">
                 <img
                   src="./assets/images/icons/whatsapp.png"
                   class="social-icons"

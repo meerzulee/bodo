@@ -21,14 +21,14 @@
           >+996 223 120 120</a
         >
 
-        <a href="#" class="mx-3">
+        <a href="https://t.me/Bobur2323" class="mx-3">
           <img
             src="../assets/images/icons/telegram.png"
             class="social-icons"
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="https://wa.me/996223120120">
           <img
             src="../assets/images/icons/whatsapp.png"
             class="social-icons"

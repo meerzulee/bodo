@@ -16,10 +16,10 @@
         >+996 223 120 120</a
       >
 
-      <a href="#" class="mx-3">
+      <a href="https://t.me/Bobur2323" class="mx-3">
         <img src="@/assets/images/icons/telegram.png" class="w-6 h-6" alt="" />
       </a>
-      <a href="#">
+      <a href="https://wa.me/996223120120">
         <img src="@/assets/images/icons/whatsapp.png" class="w-6 h-6" alt="" />
       </a>
     </div>
