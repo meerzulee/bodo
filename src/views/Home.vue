@@ -57,7 +57,7 @@
           <span class="font-semibold">МОЖЕТ БЫТЬ БЫСТРЫМ</span> <br />
           <span
             class="tracking-wide text-justify heading-3 tab-land-down:text-4xl"
-            ><b class="font-black">BODO</b> — первая строительная компания
+            ><b class="font-black">bodo</b> — первая строительная компания
             Бишкека, внедрившая современные технологии комплексно во все
             процессы ремонта квартир</span
           >

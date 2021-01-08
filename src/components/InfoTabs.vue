@@ -33,7 +33,7 @@
     <transition-group name="tfade" tag="div">
       <div
         v-for="(x, index) in tabText"
-        :key="index"
+        :key="index + 'k'"
         class="flex px-4 py-8 tab-mini-down:px-1"
         :class="[openTab === index + 1 ? 'block' : 'hidden']"
       >

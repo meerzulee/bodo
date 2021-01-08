@@ -105,7 +105,7 @@
           <div class="w-1/2 pl-20">
             <div class="flex">
               <img
-                src="@/assets/images/cards.jpg"
+                src="@/assets/images/cards.png"
                 class="w-full h-full"
                 alt=""
               />

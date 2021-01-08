@@ -6,7 +6,7 @@
         class="container items-center justify-between hidden w-full px-3 py-1 mx-auto bg-white tab-land:flex"
       >
         <div class="flex">
-          <router-link to="/" class="nav-el">Bodo </router-link>
+          <router-link to="/" class="nav-el">bodo </router-link>
         </div>
 
         <div class="flex items-center">

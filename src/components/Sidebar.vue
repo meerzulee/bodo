@@ -36,7 +36,7 @@
             <div
               class="flex items-center w-full p-4 text-2xl text-white bg-gray-600 border-l-4 border-royal_blue"
             >
-              Bodo
+              bodo
             </div></router-link
           >
 
